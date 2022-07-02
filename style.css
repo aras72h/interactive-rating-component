@@ -24,23 +24,19 @@ input[type=radio] {
 }
 
 /******** Layout **********/
-
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 
 .card {
   border-radius: 15px;
-  padding: 1.953em;
-  width: 70%;
-  max-width: 478.7px;
+  padding: 3.052em 1.953em;
+  width: 75%;
+  max-width: 400px;
 }
 
 .star {
+  width: 17px;
   border-radius: 50%;
   padding: 15px;
 }
@@ -49,37 +45,30 @@ input[type=radio] {
   margin: 0.482em 0;
 }
 
-.card-body {
-  margin: 1em 0;
-}
-
 .radio-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 1em 0;
-}
-
-.radio-btn,
-.radio-btn label {
-  cursor: pointer;
+  justify-content: space-between;
 }
 
 .radio-btn {
   height: 3.583em;
   width: 3.583em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-input[type=submit] {
+.btn {
   border-radius: 36.621px;
   padding: 1em 0 0.8em;
-  margin: 1em 0;
   width: 100%;
   cursor: pointer;
+  margin: 1.563em 0 0;
+}
+
+.rate-output {
+  padding: 0.512em 1em;
+  border-radius: 30px;
 }
 
 /******** Type **********/
@@ -92,13 +81,13 @@ body {
 }
 
 .card-body {
-  /* font-size: 1.1em; */
   line-height: 1.6;
 }
 
-input[type=submit] {
+.btn {
   font-size: 1.2em;
 }
+
 
 /******** Color **********/
 .container {
@@ -107,10 +96,6 @@ input[type=submit] {
 
 .card {
   background-color: var(--dark-blue);
-}
-
-.star {
-  background-color: hsl(216, 12%, 22%);
 }
 
 .card-heading {
@@ -131,12 +116,12 @@ input[type=submit] {
   color: var(--white);
 }
 
-input[type=submit] {
+.btn {
   background-color: var(--orange);
   color: var(--white);
 }
 
-input[type=submit]:hover {
+.btn:hover {
   color: var(--orange);
   background-color: var(--white);
 }
@@ -144,4 +129,31 @@ input[type=submit]:hover {
 .selected {
   background-color: var(--orange);
   color: var(--white);
+}
+
+.rate-output {
+  color: var(--orange);
+}
+
+/* Utility Classes */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-1 {
+  margin: 1em 0;
+}
+
+.light-bg {
+  background-color: hsl(216, 12%, 22%);
+}
+
+.text-center {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
