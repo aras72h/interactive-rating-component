@@ -1,0 +1,138 @@
+:root {
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --light-grey: hsl(217, 12%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+* {
+  font-family: 'Overpass', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* outline: 1px solid lightgreen; */
+}
+
+input[type=radio] {
+  appearance: none;
+}
+
+/******** Layout **********/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 1.953em;
+  width: 70%;
+  max-width: 478.7px;
+}
+
+.star {
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.card-heading {
+  margin: 0.482em 0;
+}
+
+.card-body {
+  margin: 1em 0;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1em 0;
+}
+
+.radio-btn,
+.radio-btn label {
+  cursor: pointer;
+}
+
+.radio-btn {
+  height: 3.583em;
+  width: 3.583em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+input[type=submit] {
+  border-radius: 36.621px;
+  padding: 1em 0 0.8em;
+  margin: 1em 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+/******** Type **********/
+body {
+  font-size: 15px;
+}
+
+.card-heading {
+  font-size: 2.074em;
+}
+
+.card-body {
+  /* font-size: 1.1em; */
+  line-height: 1.6;
+}
+
+input[type=submit] {
+  font-size: 1.2em;
+}
+
+/******** Color **********/
+.container {
+  background-color: var(--very-dark-blue);
+}
+
+.card {
+  background-color: var(--dark-blue);
+}
+
+.star {
+  background-color: hsl(216, 12%, 22%);
+}
+
+.card-heading {
+  color: var(--white);
+}
+
+.card-body {
+  color: var(--light-grey);
+}
+
+.radio-btn {
+  color: var(--light-grey);
+  background-color: hsl(216, 12%, 22%);
+}
+
+.radio-btn:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+input[type=submit] {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+input[type=submit]:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
