@@ -19,6 +19,10 @@ input[type=radio] {
   appearance: none;
 }
 
+.radio-btn label {
+  pointer-events: none;
+}
+
 /******** Layout **********/
 
 .container {
@@ -135,4 +139,9 @@ input[type=submit] {
 input[type=submit]:hover {
   color: var(--orange);
   background-color: var(--white);
+}
+
+.selected {
+  background-color: var(--orange);
+  color: var(--white);
 }
