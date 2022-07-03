@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/aras72h/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://aras72h.github.io/interactive-rating-component/)
+- Solution URL: [Source Code](https://github.com/aras72h/interactive-rating-component)
+- Live Site URL: [Live Example](https://aras72h.github.io/interactive-rating-component/)
 
 ### Built with
 
