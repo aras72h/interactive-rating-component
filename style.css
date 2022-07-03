@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  /* outline: 1px solid lightgreen; */
+  outline: 1px solid lightgreen;
 }
 
 input[type=radio] {
@@ -30,9 +30,9 @@ input[type=radio] {
 
 .card {
   border-radius: 15px;
-  padding: 3.052em 1.953em;
+  padding: 1.953em;
   width: 75%;
-  max-width: 400px;
+  /* max-width: 400px; */
 }
 
 .star {
@@ -64,7 +64,7 @@ input[type=radio] {
   padding: 1em 0 0.8em;
   width: 100%;
   cursor: pointer;
-  margin: 1.563em 0 0;
+  margin: 1em 0 0;
 }
 
 .rate-output {
