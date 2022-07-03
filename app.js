@@ -9,14 +9,11 @@ function setRating(e) {
   radioGroup.forEach((btn) => btn.classList.contains('selected') &&
     btn.classList.remove('selected')
   )
-  // document.querySelector('.selected').classList.remove('selected')
   e.target.classList.add('selected')
 }
 
 function formHandler(e) {
   rating = form.elements.rating.value
-  // document.querySelector('rate-output').textContent = `You selected ${rating} out of 5`
-  // console.log(document.querySelector('body').innerHTML);
   document.querySelector('body').innerHTML = `
     <div class="container center">
       <div class="card center">
