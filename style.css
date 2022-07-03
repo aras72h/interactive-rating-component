@@ -84,8 +84,6 @@ input[type=radio] {
 }
 
 .warning {
-  background-color: var(--warning) !important;
-  color: white !important;
   padding: 1em 1.2em;
   border-radius: 1em;
   margin-bottom: 0.833em;
@@ -143,10 +141,10 @@ body {
   color: var(--white);
 }
 
-
 .btn {
   background-color: var(--orange);
   color: var(--white);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .btn:hover {
@@ -163,8 +161,12 @@ body {
   color: var(--orange);
 }
 
-/* Utility Classes */
+.warning {
+  background-color: var(--warning);
+  color: white;
+}
 
+/* Utility Classes */
 .center {
   display: flex;
   flex-direction: column;
