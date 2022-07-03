@@ -20,8 +20,8 @@
       <form class="form" action="/">
         <fieldset>
           <legend>
-            <div class="star light-bg center">
-              <img src="images/icon-star.svg" alt="star icon">
+            <div class="star light-bg center no-select">
+              <img src="images/icon-star.svg" aria-hidden="true" alt="star icon">
             </div>
             <h2 class="card-heading">How did we do?</h2>
             <p class="card-body my-1">
@@ -31,8 +31,8 @@
               offering!
             </p>
           </legend>
-          <div class="radio-group my-1">
-            <div class="radio-btn center">
+          <div class="radio-group no-select my-1">
+            <div class="radio-btn center hover-off">
               <input type="radio" name="rating" id="rating-1" value="1">
               <label for="rating-1">1</label>
             </div>
@@ -49,12 +49,12 @@
               <label for="rating-4">4</label>
             </div>
             <div class="radio-btn center">
-              <input type="radio" name="rating" id="rating-5" value="5" checked>
+              <input type="radio" name="rating" id="rating-5" value="5">
               <label for="rating-5">5</label>
             </div>
           </div>
           <div>
-            <input class="btn" type="submit" value="SUBMIT">
+            <input class="btn no-select" type="submit" value="SUBMIT">
           </div>
         </fieldset>
       </form>

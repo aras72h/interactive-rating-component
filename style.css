@@ -1,3 +1,5 @@
+/* This file uses a modular scale with 1.2 and 1.25 ratio */
+
 :root {
   --very-dark-blue: hsl(216, 12%, 8%);
   --dark-blue: hsl(213, 19%, 18%);
@@ -5,10 +7,11 @@
   --light-grey: hsl(217, 12%, 63%);
   --white: hsl(0, 0%, 100%);
   --orange: hsl(25, 97%, 53%);
+  --type-face: 'Overpass', sans-serif;
 }
 
 * {
-  font-family: 'Overpass', sans-serif;
+  font-family: var(--type-face);
   margin: 0;
   padding: 0;
   border: none;
@@ -57,6 +60,15 @@ input[type=radio] {
   width: 3.583em;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+
+.radio-btn:focus {
+  outline: 2px solid red !important;
+}
+
+.btn:focus {
+  outline: 2px solid red;
 }
 
 .btn {
@@ -65,6 +77,7 @@ input[type=radio] {
   width: 100%;
   cursor: pointer;
   margin: 1em 0 0;
+  transition: background-color 0.3s linear;
 }
 
 .rate-output {
@@ -86,7 +99,7 @@ body {
 }
 
 .btn {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 
@@ -112,10 +125,11 @@ body {
   background-color: hsl(216, 12%, 22%);
 }
 
-.radio-btn:hover {
-  background-color: var(--light-grey);
+.radio-btn:not(.hover-off):hover {
+  background-color: var(--orange);
   color: var(--white);
 }
+
 
 .btn {
   background-color: var(--orange);
@@ -128,7 +142,7 @@ body {
 }
 
 .selected {
-  background-color: var(--orange);
+  background-color: var(--light-grey);
   color: var(--white);
 }
 
@@ -157,4 +171,9 @@ body {
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
 }

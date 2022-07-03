@@ -7,9 +7,9 @@ form.addEventListener('submit', formHandler)
 function setRating(e) {
   e.target.firstElementChild.checked = true
   radioGroup.forEach((btn) => btn.classList.contains('selected') &&
-    btn.classList.remove('selected')
+    btn.classList.remove('selected', 'hover-off')
   )
-  e.target.classList.add('selected')
+  e.target.classList.add('selected', 'hover-off')
 }
 
 function formHandler(e) {
@@ -17,8 +17,8 @@ function formHandler(e) {
   document.querySelector('body').innerHTML = `
     <div class="container center">
       <div class="card center">
-        <img src="images/illustration-thank-you.svg" alt="Thank you Image">
-        <p class="rate-output my-1 light-bg">You selected ${rating} out of 5</p>
+        <img class="no-select" src="images/illustration-thank-you.svg" aria-hidden="true" alt="Thank you Image">
+        <p class="rate-output my-1 light-bg no-select">You selected ${rating} out of 5</p>
         <h2 class="card-heading text-center">Thank You!</h2>
         <p class="card-body text-center">We appreciate you taking the time to give a rating. If you ever need more
           support,
