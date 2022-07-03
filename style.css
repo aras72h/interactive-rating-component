@@ -29,20 +29,18 @@ input[type=radio] {
 
 /******** Layout **********/
 .container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card {
   border-radius: 2.488em;
   padding: 2.074em;
   width: 75%;
-  max-width: 332.791px;
-  /* 332.791px */
-  /* height: 45%; */
+  max-width: 22.19em;
 }
 
 .star {
-  width: 1.2em;
+  width: 1.1em;
   border-radius: 50%;
   padding: 1em;
   margin-bottom: 1.728em;
@@ -88,12 +86,12 @@ input[type=radio] {
   border-radius: 1em;
   margin-bottom: 0.833em;
   font-size: 1.2em;
-  width: 332.791px;
+  width: 18.488em;
 }
 
 /******** Type **********/
 body {
-  font-size: 15px;
+  font-size: calc(15px + 0.2vw);
 }
 
 .card-heading {
