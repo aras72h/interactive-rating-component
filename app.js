@@ -6,7 +6,10 @@ form.addEventListener('submit', formHandler)
 
 function setRating(e) {
   e.target.firstElementChild.checked = true
-  radioGroup.forEach((btn) => btn.classList.remove('selected'))
+  radioGroup.forEach((btn) => btn.classList.contains('selected') &&
+    btn.classList.remove('selected')
+  )
+  // document.querySelector('.selected').classList.remove('selected')
   e.target.classList.add('selected')
 }
 

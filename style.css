@@ -32,7 +32,7 @@ input[type=radio] {
   border-radius: 15px;
   padding: 1.953em;
   width: 75%;
-  /* max-width: 400px; */
+  max-width: 400px;
 }
 
 .star {
