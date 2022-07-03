@@ -53,6 +53,7 @@ input[type=radio] {
 .radio-group {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 0.579em;
   justify-content: space-between;
 }
 
@@ -91,7 +92,7 @@ input[type=radio] {
 
 /******** Type **********/
 body {
-  font-size: calc(15px + 0.2vw);
+  font-size: calc(12px + 0.4vw);
 }
 
 .card-heading {
