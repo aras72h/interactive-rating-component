@@ -14,19 +14,31 @@ function setRating(e) {
 
 function formHandler(e) {
   rating = form.elements.rating.value
-  document.querySelector('body').innerHTML = `
-    <div class="container center">
-      <div class="card center">
-        <img class="no-select" src="images/illustration-thank-you.svg" aria-hidden="true" alt="Thank you Image">
-        <p class="rate-output my-1 light-bg no-select">You selected ${rating} out of 5</p>
-        <h2 class="card-heading text-center">Thank You!</h2>
-        <p class="card-body text-center">We appreciate you taking the time to give a rating. If you ever need more
-          support,
-          don't
-          hesitate to get in touch!</p>
+  if (rating !== '') {
+    document.querySelector('body').innerHTML = `
+      <div class="container center">
+        <div class="card center">
+          <img class="no-select" src="images/illustration-thank-you.svg" aria-hidden="true" alt="Thank you Image">
+          <p class="rate-output light-bg no-select">You selected ${rating} out of 5</p>
+          <h2 class="card-heading text-center">Thank You!</h2>
+          <p class="card-body text-center">We appreciate you taking the time to give a rating. If you ever need more
+            support,
+            don't
+            hesitate to get in touch!</p>
+        </div>
       </div>
-    </div>
-  `
+    `
+  } else {
+    const container = document.querySelector('.container')
+    const card = document.querySelector('.card')
+    const div = document.createElement('div')
+    div.className = 'warning'
+    div.appendChild(document.createTextNode('Please Select a Rating'))
+    container.insertBefore(div, card)
+    setTimeout(() => {
+      document.querySelector('.warning').remove()
+    }, 3000);
+  }
 
   e.preventDefault()
 }

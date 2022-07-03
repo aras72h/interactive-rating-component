@@ -7,6 +7,7 @@
   --light-grey: hsl(217, 12%, 63%);
   --white: hsl(0, 0%, 100%);
   --orange: hsl(25, 97%, 53%);
+  --warning: #BD1B06;
   --type-face: 'Overpass', sans-serif;
 }
 
@@ -32,17 +33,19 @@ input[type=radio] {
 }
 
 .card {
-  border-radius: 15px;
-  padding: 1.953em;
+  border-radius: 2.488em;
+  padding: 2.074em;
   width: 75%;
-  max-width: 400px;
+  max-width: 332.791px;
+  /* 332.791px */
+  /* height: 45%; */
 }
 
 .star {
-  width: 1.25em;
+  width: 1.2em;
   border-radius: 50%;
   padding: 1em;
-  margin-bottom: 1.953em;
+  margin-bottom: 1.728em;
 }
 
 .card-heading {
@@ -63,17 +66,9 @@ input[type=radio] {
   transition: background-color 0.3s linear;
 }
 
-.radio-btn:focus {
-  outline: 2px solid red !important;
-}
-
-.btn:focus {
-  outline: 2px solid red;
-}
-
 .btn {
   border-radius: 2.441em;
-  padding: 1em 0 0.8em;
+  padding: 0.833em 0;
   width: 100%;
   cursor: pointer;
   margin: 1em 0 0;
@@ -81,8 +76,19 @@ input[type=radio] {
 }
 
 .rate-output {
-  padding: 0.512em 1em;
-  border-radius: 1.953em;
+  padding: 0.579em 1em;
+  margin: 2.074em 0 1em;
+  border-radius: 2.074em;
+}
+
+.warning {
+  background-color: var(--warning) !important;
+  color: white !important;
+  padding: 1em 1.2em;
+  border-radius: 1em;
+  margin-bottom: 0.833em;
+  font-size: 1.2em;
+  width: 332.791px;
 }
 
 /******** Type **********/
@@ -95,7 +101,7 @@ body {
 }
 
 .card-body {
-  line-height: 1.6;
+  line-height: 1.72;
 }
 
 .btn {
@@ -173,7 +179,7 @@ body {
   padding-right: 1em;
 }
 
-.no-select {
+.no-selection {
   -webkit-user-select: none;
   user-select: none;
 }
