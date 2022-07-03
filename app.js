@@ -20,7 +20,7 @@ function formHandler(e) {
         <div class="card center">
           <img class="no-select" src="images/illustration-thank-you.svg" aria-hidden="true" alt="Thank you Image">
           <p class="rate-output light-bg no-select">You selected ${rating} out of 5</p>
-          <h2 class="card-heading text-center">Thank You!</h2>
+          <h1 class="card-heading text-center">Thank You!</h1>
           <p class="card-body text-center">We appreciate you taking the time to give a rating. If you ever need more
             support,
             don't
@@ -33,7 +33,7 @@ function formHandler(e) {
     const card = document.querySelector('.card')
     const div = document.createElement('div')
     div.className = 'warning'
-    div.appendChild(document.createTextNode('Please Select a Rating'))
+    div.appendChild(document.createTextNode('⚠ Please Select a Rating'))
     container.insertBefore(div, card)
     setTimeout(() => {
       document.querySelector('.warning').remove()
